@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@color/papyrus_surface" android:scrollbars="none">
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingStart="32dp" android:paddingEnd="32dp" android:paddingBottom="40dp">
+
+        <!-- Clock: 72sp Noto Serif bold, -10dp left offset via translationX in code -->
+        <TextView android:id="@+id/tv_clock"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_marginTop="80dp"
+            android:fontFamily="@font/noto_serif"
+            android:text="12:00" android:textSize="72sp" android:textStyle="bold"
+            android:textColor="@color/papyrus_on_surface"/>
+
+        <!-- Greeting: 11sp Manrope bold uppercase secondary -->
+        <TextView android:id="@+id/tv_greeting"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:fontFamily="@font/manrope"
+            android:text="GOOD MORNING, VINOD"
+            android:textColor="@color/papyrus_secondary"
+            android:textSize="11sp" android:textStyle="bold" android:letterSpacing="0.15"/>
+
+        <!-- Date: 13sp Manrope bold uppercase 80% opacity -->
+        <TextView android:id="@+id/tv_date"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:fontFamily="@font/manrope"
+            android:text="SATURDAY, MARCH 21"
+            android:textColor="@color/papyrus_on_surface"
+            android:textSize="13sp" android:textStyle="bold"
+            android:letterSpacing="0.10" android:alpha="0.8"/>
+
+        <!-- Pill row: weather + RAM -->
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_marginTop="20dp" android:orientation="horizontal">
+
+            <TextView android:id="@+id/tv_weather"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:background="@drawable/bg_pill"
+                android:fontFamily="@font/manrope"
+                android:paddingStart="20dp" android:paddingEnd="20dp"
+                android:paddingTop="10dp" android:paddingBottom="10dp"
+                android:text="24°C / Partly Cloudy"
+                android:textColor="@color/papyrus_on_surface"
+                android:textSize="12sp" android:textStyle="bold"/>
+
+            <TextView android:id="@+id/tv_ram"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:background="@drawable/bg_pill"
+                android:fontFamily="@font/manrope"
+                android:paddingStart="20dp" android:paddingEnd="20dp"
+                android:paddingTop="10dp" android:paddingBottom="10dp"
+                android:text="2.1 GB FREE"
+                android:textColor="@color/papyrus_on_surface"
+                android:textSize="12sp" android:textStyle="bold" android:alpha="0.6"/>
+        </LinearLayout>
+
+        <!-- App grid: 4 columns -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_app_grid"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="80dp"
+            android:nestedScrollingEnabled="false"
+            app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+            app:spanCount="4"/>
+
+    </LinearLayout>
+</ScrollView>

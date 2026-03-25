@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@color/papyrus_surface"
+    android:paddingStart="32dp" android:paddingEnd="32dp">
+
+    <TextView android:id="@+id/tv_setup_title"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:fontFamily="@font/noto_serif"
+        android:text="Warmly\nWelcome,"
+        android:textColor="@color/papyrus_on_surface"
+        android:textSize="32sp" android:textStyle="bold"
+        android:lineSpacingMultiplier="1.1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView android:id="@+id/tv_setup_label"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/manrope"
+        android:text="MAY I ASK YOUR NAME?"
+        android:textColor="@color/papyrus_secondary"
+        android:textSize="13sp" android:textStyle="bold" android:letterSpacing="0.15"
+        app:layout_constraintTop_toBottomOf="@id/tv_setup_title"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <EditText android:id="@+id/et_name"
+        android:layout_width="0dp" android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:background="@null"
+        android:fontFamily="@font/manrope"
+        android:hint="Enter your name"
+        android:textColor="@color/papyrus_on_surface"
+        android:textColorHint="@color/papyrus_secondary"
+        android:textSize="20sp"
+        android:paddingTop="16dp" android:paddingBottom="16dp"
+        android:inputType="textPersonName|textCapWords"
+        android:imeOptions="actionDone"
+        app:layout_constraintTop_toBottomOf="@id/tv_setup_label"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <View android:id="@+id/input_divider"
+        android:layout_width="0dp" android:layout_height="1dp"
+        android:background="@color/color_divider"
+        app:layout_constraintTop_toBottomOf="@id/et_name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <LinearLayout android:id="@+id/bottom_row"
+        android:layout_width="0dp" android:layout_height="wrap_content"
+        android:layout_marginBottom="48dp"
+        android:orientation="horizontal" android:gravity="center_vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+            android:layout_weight="1" android:orientation="horizontal">
+            <View android:id="@+id/dot_1"
+                android:layout_width="24dp" android:layout_height="6dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/bg_dot_active"/>
+            <View android:layout_width="6dp" android:layout_height="6dp"
+                android:layout_marginEnd="8dp" android:background="@drawable/bg_dot_inactive"/>
+            <View android:layout_width="6dp" android:layout_height="6dp"
+                android:background="@drawable/bg_dot_inactive"/>
+        </LinearLayout>
+
+        <Button android:id="@+id/btn_continue"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="CONTINUE"
+            android:fontFamily="@font/manrope"
+            android:textSize="12sp" android:letterSpacing="0.10"
+            android:textColor="@color/papyrus_on_primary"
+            android:backgroundTint="@color/papyrus_primary"
+            android:paddingStart="24dp" android:paddingEnd="24dp"
+            android:paddingTop="16dp" android:paddingBottom="16dp"
+            style="@style/Widget.MaterialComponents.Button"
+            app:cornerRadius="4dp" app:elevation="0dp"/>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

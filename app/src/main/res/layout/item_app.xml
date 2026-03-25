@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    FIX #4: Root width must be match_parent so each grid cell fills its 1/4 slot.
+    wrap_content caused icons to be left-aligned and unevenly spaced.
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:paddingTop="8dp"
+    android:paddingBottom="8dp">
+
+    <ImageView android:id="@+id/iv_app_icon"
+        android:layout_width="56dp" android:layout_height="56dp"
+        android:background="@drawable/bg_app_icon"
+        android:padding="6dp"
+        android:scaleType="fitCenter"
+        android:contentDescription="@null"/>
+
+    <TextView android:id="@+id/tv_app_label"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:fontFamily="@font/noto_serif"
+        android:textColor="@color/papyrus_on_surface"
+        android:textSize="11sp" android:textStyle="bold"
+        android:gravity="center"
+        android:maxLines="2" android:ellipsize="end"
+        android:paddingStart="4dp" android:paddingEnd="4dp"/>
+
+</LinearLayout>

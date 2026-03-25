@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.StitchLauncher" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/papyrus_primary</item>
+        <item name="colorOnPrimary">@color/papyrus_on_primary</item>
+        <item name="colorPrimaryVariant">@color/papyrus_primary</item>
+        <item name="colorSecondary">@color/papyrus_secondary</item>
+        <item name="colorSurface">@color/papyrus_surface</item>
+        <item name="colorOnSurface">@color/papyrus_on_surface</item>
+        <item name="android:colorBackground">@color/papyrus_surface</item>
+        <item name="android:windowBackground">@color/papyrus_surface</item>
+        <item name="android:statusBarColor">@color/papyrus_surface</item>
+        <item name="android:navigationBarColor">@color/papyrus_surface</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:windowLightNavigationBar">true</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:windowAnimationStyle">@style/NoAnimation</item>
+    </style>
+
+    <style name="Theme.StitchLauncher.Sepia" parent="Theme.StitchLauncher">
+        <item name="colorPrimary">@color/sepia_primary</item>
+        <item name="colorSurface">@color/sepia_surface</item>
+        <item name="colorOnSurface">@color/sepia_on_surface</item>
+        <item name="android:colorBackground">@color/sepia_surface</item>
+        <item name="android:windowBackground">@color/sepia_surface</item>
+        <item name="android:statusBarColor">@color/sepia_surface</item>
+        <item name="android:navigationBarColor">@color/sepia_surface</item>
+    </style>
+
+    <style name="Theme.StitchLauncher.Charcoal" parent="Theme.StitchLauncher">
+        <item name="colorPrimary">@color/charcoal_primary</item>
+        <item name="colorSurface">@color/charcoal_surface</item>
+        <item name="colorOnSurface">@color/charcoal_on_surface</item>
+        <item name="android:colorBackground">@color/charcoal_surface</item>
+        <item name="android:windowBackground">@color/charcoal_surface</item>
+        <item name="android:statusBarColor">@color/charcoal_surface</item>
+        <item name="android:navigationBarColor">@color/charcoal_surface</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:windowLightNavigationBar">false</item>
+    </style>
+
+    <style name="NoAnimation">
+        <item name="android:activityOpenEnterAnimation">@null</item>
+        <item name="android:activityOpenExitAnimation">@null</item>
+        <item name="android:activityCloseEnterAnimation">@null</item>
+        <item name="android:activityCloseExitAnimation">@null</item>
+    </style>
+</resources>

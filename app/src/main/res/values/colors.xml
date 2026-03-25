@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="papyrus_surface">#FAFAF5</color>
+    <color name="papyrus_on_surface">#2E342D</color>
+    <color name="papyrus_primary">#4A5D4E</color>
+    <color name="papyrus_on_primary">#FFFFFF</color>
+    <color name="papyrus_secondary">#5C5F58</color>
+    <color name="papyrus_surface_low">#F4F4EF</color>
+    <color name="papyrus_surface_lowest">#FFFFFF</color>
+    <color name="papyrus_wallpaper">#E2DFD7</color>
+    <color name="color_divider">#EBEBEB</color>
+    <color name="color_progress_track">#EEEEEE</color>
+    <color name="sepia_surface">#F5F0E8</color>
+    <color name="sepia_on_surface">#3B2F1E</color>
+    <color name="sepia_primary">#8B6343</color>
+    <color name="sepia_surface_low">#EDE5D6</color>
+    <color name="charcoal_surface">#1F1F1F</color>
+    <color name="charcoal_on_surface">#E8E8E3</color>
+    <color name="charcoal_primary">#6B8F70</color>
+    <color name="charcoal_surface_low">#2A2A2A</color>
+</resources>

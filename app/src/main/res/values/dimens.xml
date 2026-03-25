@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="tab_active_elevation">2dp</dimen>
+    <dimen name="screen_padding_h">32dp</dimen>
+    <dimen name="app_icon_size">56dp</dimen>
+</resources>
